@@ -1,0 +1,16 @@
+# Credentials
+*.json
+.env
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# Data
+data/
+*.csv
+!results/*.csv
+
+# System
+.DS_Store
