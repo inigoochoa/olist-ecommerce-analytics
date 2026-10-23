@@ -16,20 +16,15 @@ The analysis is framed around one question:
 
 > **How can Olist grow the marketplace while keeping a strong customer experience?**
 
-It is broken down into eight sub-questions:
+The [challenge brief](docs/olist_data_challenge.md) breaks it down into eight sub-questions. This project answers the five that best address growth and customer experience; the rest are listed under [Next steps](#next-steps).
 
-| #   | Area                     | Question                                                                         |
-| --- | ------------------------ | -------------------------------------------------------------------------------- |
-| 1   | Marketplace performance  | How have orders, GMV, AOV, customers and active sellers evolved over time?       |
-| 2   | Revenue drivers          | Which categories, sellers and regions drive revenue, and how concentrated is it? |
-| 3   | Customer behaviour       | How many customers buy again, and how does behaviour differ by region?           |
-| 4   | Customer satisfaction    | Which factors are associated with low review scores?                             |
-| 5   | Delivery performance     | How often and how late do orders arrive, and at which stage do delays happen?    |
-| 6   | Delivery vs satisfaction | Does satisfaction drop as delivery delays grow?                                  |
-| 7   | Seller performance       | Which sellers are high-value / high-quality, and which hurt the marketplace?     |
-| 8   | Category opportunities   | Where should Olist invest, recruit sellers or fix service quality?               |
-
-Full brief: [docs/olist_data_challenge.md](docs/olist_data_challenge.md)
+| #   | Area                     | Question                                                                                         | Answered in                                                                                     |
+| --- | ------------------------ | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| 1   | Marketplace performance  | How have orders, GMV and average order value evolved over time?                                  | Power BI · Executive Overview                                                                   |
+| 2   | Revenue drivers          | Which categories and regions drive revenue and order volume?                                     | Power BI · Executive Overview                                                                   |
+| 3   | Customer behaviour       | What share of customers purchase more than once?                                                 | Power BI · Executive Overview (KPI)                                                             |
+| 4   | Delivery performance     | How often are orders late, where, and at which stage of fulfilment do delays originate?          | Power BI · Customer & Delivery                                                                  |
+| 5   | Delivery vs satisfaction | Do review scores fall as delivery delay and total delivery time increase?                        | [`01_delivery_vs_satisfaction.ipynb`](notebooks/01_delivery_vs_satisfaction.ipynb) · Power BI · Customer & Delivery |
 
 ## Dataset
 
@@ -157,6 +152,8 @@ erDiagram
 olist-ecommerce-analytics/
 ├── docs/
 │   └── olist_data_challenge.md     # Business brief and analysis questions
+├── notebooks/
+│   └── 01_delivery_vs_satisfaction.ipynb   # Q5: delivery delay & total delivery time vs review score
 ├── sql/
 │   ├── 00_data_quality/            # Checks on raw tables (nulls, duplicates, keys, ranges)
 │   ├── 01_staging/                 # olist_raw → olist_staging: clean and type
@@ -171,8 +168,19 @@ olist-ecommerce-analytics/
 ## Project status
 
 - ✅ SQL modeling
-- 🚧 Python analysis
-- ⏳ Power BI dashboard
+- ✅ Python analysis
+- 🚧 Power BI dashboard
+
+## Next steps
+
+Out of scope for this version, in order of expected value:
+
+- **Customer satisfaction drivers:** a multivariate analysis of review scores (category, seller, order value, freight, basket size) to separate the effect of delivery from other factors.
+- **Delivery vs satisfaction, extended:** seller processing time and freight cost vs review score.
+- **Seller performance:** a value × quality segmentation of sellers for operational follow-up.
+- **Category opportunities:** categories combining growth, revenue and satisfaction.
+- **Customer behaviour, extended:** regional differences and changes in purchasing behaviour over time.
+- **Optional questions from the brief:** payments and instalments, freight as % of order value, basket analysis, shipping distance.
 
 ## Contact
 
