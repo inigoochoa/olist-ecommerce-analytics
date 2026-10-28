@@ -68,7 +68,7 @@ select
   *,
   case
     when is_late_delivery then "Late"
-    when not is_late_delivery then "On time" end as delivery_status,
+    when not is_late_delivery then "On time or early" end as delivery_status,
     case
       when delivery_delay_days <= -15 then '15+ days early'
       when delivery_delay_days <= -8  then '8-14 days early'
