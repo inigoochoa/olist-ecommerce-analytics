@@ -75,7 +75,7 @@ Orders delivered early average a 4.3 review score; orders more than 7 days late 
 
 **Implication.** Shortening estimated delivery dates to make checkout more attractive would push orders into the zone where reviews collapse. The conservative estimates are protecting satisfaction.
 
-**Action.** Keep current estimates, and only tighten them on routes where actual delivery times are consistently short. Flag orders at risk of being late (e.g. still with the carrier X days before the estimated date) and notify the customer proactively, before the promise is broken.
+**Action.** Keep current estimates, and only tighten them on routes where actual delivery times are consistently short. Flag orders at risk of being late (e.g. still in transit close to the estimated delivery date) and notify the customer proactively, before the promise is broken.
 
 ### 4. Measure retention properly before investing in it
 
