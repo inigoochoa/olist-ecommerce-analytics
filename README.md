@@ -227,16 +227,19 @@ erDiagram
 
 ```
 olist-ecommerce-analytics/
+├── dashboard/
+│   └── olist_dashboard.pbix               # Power BI report (2 pages)
 ├── docs/
-│   └── olist_data_challenge.md     # Business brief and analysis questions
+│   └── olist_data_challenge.md            # Business brief and analysis questions
+├── images/                                # Charts used in this README
 ├── notebooks/
-│   └── 01_delivery_vs_satisfaction.ipynb   # Q5: delivery delay & total delivery time vs review score
+│   └── 01_delivery_vs_satisfaction.ipynb  # delivery delay & total delivery time vs review score
 ├── sql/
-│   ├── 00_data_quality/            # Checks on raw tables (nulls, duplicates, keys, ranges)
-│   ├── 01_staging/                 # olist_raw → olist_staging: clean and type
-│   └── 02_analytics/               # olist_staging → olist_analytics: facts & dimensions
-│       ├── fact_order_items.sql    # Grain: one row per order item
-│       └── fact_orders.sql         # Grain: one row per order (payments + reviews aggregated)
+│   ├── 00_data_quality/                   # Checks on raw tables (nulls, duplicates, keys, ranges)
+│   ├── 01_staging/                        # olist_raw → olist_staging: clean and type
+│   └── 02_analytics/                      # olist_staging → olist_analytics: facts & dimensions
+│       ├── fact_order_items.sql           # Grain: one row per order item
+│       └── fact_orders.sql                # Grain: one row per order (payments + reviews aggregated)
 ├── .gitignore
 ├── README.md
 └── requirements.txt
