@@ -1,0 +1,9 @@
+google-cloud-bigquery
+google-cloud-bigquery-storage
+db-dtypes
+pyarrow
+pandas
+numpy
+matplotlib
+seaborn
+ipykernel
