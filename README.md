@@ -1,3 +1,4 @@
+![Olist E-commerce Analytics](images/olist-banner.png)
 # Olist E-commerce Analytics
 
 End-to-end analytics project on Olist's Brazilian marketplace data: **BigQuery (SQL) → Python → Power BI**.
